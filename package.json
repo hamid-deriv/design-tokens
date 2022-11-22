@@ -1,0 +1,14 @@
+{
+  "name": "design-tokens",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "json-to-scss": "^1.6.2",
+    "sass": "^1.56.1",
+    "style-dictionary": "^3.7.1"
+  },
+  "scripts": {
+    "build:tokens": "node ./build-tokens.js && json-to-scss './tokens/tokens.json' ./tokens/tokens.scss && rm ./tokens/tokens.json"
+  }
+}
