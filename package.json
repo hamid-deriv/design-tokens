@@ -5,10 +5,11 @@
   "license": "MIT",
   "devDependencies": {
     "json-to-scss": "^1.6.2",
-    "sass": "^1.56.1",
-    "style-dictionary": "^3.7.1"
+    "sass": "^1.63.6",
+    "style-dictionary": "^3.8.0"
   },
   "scripts": {
-    "build:tokens": "node ./build-tokens.js && json-to-scss './tokens/tokens.json' ./tokens/tokens.scss && rm ./tokens/tokens.json"
+    "build:tokens-old": "node ./build-tokens.js && json-to-scss './dist/tokens.json' ./dist/tokens.scss",
+    "build:tokens": "node ./build-tokens.js"
   }
 }

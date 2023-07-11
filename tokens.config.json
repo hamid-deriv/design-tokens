@@ -6,11 +6,11 @@
         "scss": {
             "transformGroup": "scss",
             "prefix": "",
-            "buildPath": "tokens/",
+            "buildPath": "dist/",
             "files": [
                 {
-                    "destination": "tokens.json",
-                    "format": "formatTokens"
+                    "destination": "tokens.scss",
+                    "format": "scss/map-deep"
                 }
             ]
         }
